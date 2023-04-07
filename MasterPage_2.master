@@ -1,0 +1,34 @@
+<%@ Master Language="VB" CodeFile="MasterPage_2.master.vb" Inherits="MasterPage_2"
+    MasterPageFile="~/TopContainer.master" %>
+<%@ Register Src="~/WebUserControls/SideBarMenu.ascx" TagPrefix="wuc" TagName="SideBarMenu" %>
+<%@ Register Src="~/WebUserControls/ShoppingCartSideBar.ascx" TagPrefix="wuc" TagName="SideBarShoppingCart" %>
+<%@ Register Src="~/WebUserControls/FeatureProduct.ascx" TagPrefix="wuc" TagName="FeatureProduct" %>
+<%@ Register Src="~/WebUserControls/SideBarLogin.ascx" TagPrefix="wuc" TagName="SideBarLogin" %>
+<%@ Register Src="~/WebUserControls/McAfeeSeal.ascx" TagPrefix="wuc" TagName="Seal" %>
+<%@ Register Src="~/WebUserControls/LiveChat.ascx" TagPrefix="wuc" TagName="LiveChat" %>
+<asp:Content ContentPlaceHolderID="ContentPlaceHolderInTopContainer" ID="Content"
+    runat="server">
+    <div id="leftbar" class="center">
+    <br />
+    <wuc:SideBarMenu runat ="server" ID ="oSideBarMenu" />
+    <br />
+    <br />
+    <wuc:SideBarLogin ID="SideBarLogin1" runat ="server" />
+    <br />
+    <br />
+    <wuc:Seal ID="Seal1" runat ="server"  />
+    <wuc:SideBarShoppingCart runat ="server" ID ="oSideBarShoppingCart" />
+    <br />
+    <wuc:LiveChat runat ="server" />
+    <br />
+    <asp:Image runat ="server" SkinID ="QuanlityLogo" />
+    </div>
+    <div id="mainbody" style="width :595px">
+        <div class="sitemap">
+            <asp:SiteMapPath ID="spSitePath" runat="server">
+        </asp:SiteMapPath>
+        </div> 
+        <asp:ContentPlaceHolder ID="ContentPlaceHolderInMasterPage" runat="server">
+    </asp:ContentPlaceHolder>
+    </div>
+</asp:Content>

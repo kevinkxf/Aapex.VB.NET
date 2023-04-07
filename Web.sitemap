@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="default.html" title="Home"  description="Home Page">
+		<siteMapNode url="Orthopedic.html" title="Orthopedic Products"  description="See All Orthopedic Products">
+			<siteMapNode url="Synvisc_Detail.html" title="Synvisc"  description="Buy Synvisc" />
+			<siteMapNode url="Hyalgan_Detail.html" title="Hyalgan"  description="Buy Hyalgan" />
+			<siteMapNode url="Orthovisc_Detail.html" title="Orthovisc"  description="Buy Orthovisc" />
+			<siteMapNode url="Supartz_Detail.html" title="Supartz"  description="Buy Supartz" />
+			<siteMapNode url="Euflexxa_Detail.html" title="Euflexxa"  description="Buy Euflexxa" />
+			<siteMapNode url="Durolane_Detail.html" title="Durolane"  description="Buy Durolane" />
+			<siteMapNode url="Suplasyn_Detail.html" title="Suplasyn"  description="Buy Suplasyn" />
+			<siteMapNode url="Neovisc_Detail.html" title="Neovisc"  description="Buy Neovisc" />
+			<siteMapNode url="Ostenil_Detail.html" title="Ostenil"  description="Buy Ostenil" />
+		</siteMapNode>
+		<siteMapNode url="Cosmetic.html" title="Cosmetic Products"  description="See All Cosmetic Products">
+			<siteMapNode url="Botox_Detail.html" title="Botox"  description="Buy Botox" />
+			<siteMapNode url="Dysport_Detail.html" title="Dysport"  description="Buy Dysport" />
+			<siteMapNode url="Reloxin_Detail.html" title="Reloxin"  description="Buy Reloxin" />
+			<siteMapNode url="Restylane_Detail.html" title="Restylane"  description="Buy Restylane" />
+			<siteMapNode url="Perlane_Detail.html" title="Perlane"  description="Buy Perlane" />
+			<siteMapNode url="Juvederm_Detail.html" title="Juvederm"  description="Buy Juvederm" />
+			<siteMapNode url="Radiesse_Detail.html" title="Radiesse"  description="Buy Radiesse" />
+			<siteMapNode url="Sculptra_Detail.html" title="Sculptra"  description="Buy Sculptra" />
+			<siteMapNode url="Surgiderm_Detail.html" title="Surgiderm"  description="Buy Surgiderm" />
+			<siteMapNode url="Anthelios_Detail.html" title="Anthelios"  description="Buy Anthelios" />
+			<siteMapNode url="Emla_Detail.html" title="Emla"  description="Buy Emla" />
+			<siteMapNode url="Lustra_Detail.html" title="Lustra"  description="Buy Lustra" />
+			<siteMapNode url="Ombrelle_Detail.html" title="Ombrelle"  description="Buy Ombrelle" />
+			<siteMapNode url="StriVectin_Detail.html" title="StriVectin"  description="Buy StriVectin" />
+			<siteMapNode url="Kinerase_Detail.html" title="Kinerase"  description="Buy Kinerase" />
+			<siteMapNode url="Hylexin_Detail.html" title="Hylexin"  description="Buy Hylexin" />
+		</siteMapNode>
+		<siteMapNode url="BirthControl.html" title="Birth Control Products"  description="See All Birth Control Products">
+			<siteMapNode url="Mirena_Detail.html" title="Mirena"  description="Buy Mirena" />
+			<siteMapNode url="Paragard_Detail.html" title="Paragard"  description="Buy Paragard" />
+			<siteMapNode url="Implanon_Detail.html" title="Implanon"  description="Buy Implanon" />
+		</siteMapNode>
+		<siteMapNode url="ProductCatalogue.html" title="Product Catalogue"  description="See All Product Catalogue"/>
+		<siteMapNode url="Partnership.html" title="Partnerships"  description="Be Our Partnership">
+		</siteMapNode>
+		<siteMapNode url="SearchDrug.html" title="Search Drug"  description="Find your drugs" />
+		<siteMapNode url="howtoorder.html" title="How To Order"  description="How to put your order" />
+		<siteMapNode url="FAQ.html" title="FAQ"  description="Frequent asked questions and anwsers" />
+		<siteMapNode url="contactus.html" title="Contact Us"  description="Find how to contact us" />
+		<siteMapNode url="aboutus.html" title="About Us"  description="Learn more about our business" />
+		<siteMapNode url="myaccount.html" title="My Account"  description="Manage your account">
+			<siteMapNode url="CheckOrder.html" title="Check Orders"  description="Check Your Orders" />
+			<siteMapNode url="addressbook.html" title="Address Book"  description="Manage Your Address Book" />
+			<siteMapNode url="changepassword.html" title="Change Password"  description="Change Your Password" />
+			<siteMapNode url="edituserprofile.html" title="Update User Profile"  description="Update Your Profile" />
+		</siteMapNode>
+		<siteMapNode url="shoppingcart.html" title="Shopping Cart"  description="Manage My Shopping Cart"/>
+		<siteMapNode url="privacypolicy.html" title="Privacy Policy"  description="Read Privacy Policy"/>
+		<siteMapNode url="Term.html#Term" title="Terms"  description="Read Privacy Policy"/>
+		<siteMapNode url="Term.html#Disclaimer" title="Terms and Disclaimer"  description="Read Privacy Policy"/>
+		<siteMapNode url="sitemap.html" title="Site Map"  description="Site Map"/>
+		<siteMapNode url="checkout.html" title="Check out"  description="Check Out Your Drugs" />
+		<siteMapNode url="Registration.html" title="Registration"  description="Create New Account" />
+		<siteMapNode url="Signin.html" title="Sign in"  description="Log in your account" />
+		<siteMapNode url="Forgetpassword.html" title="Forget password"  description="Forget your password?" />
+		
+	</siteMapNode>
+</siteMap>

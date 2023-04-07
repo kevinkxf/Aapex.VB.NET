@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<UsStates.xml>
+    <option value="" name="" />
+    <option value="AL" name="Alabama" />
+    <option value="AK" name="Alaska" />
+    <option value="AZ" name="Arizona" />
+    <option value="AR" name="Arkansas" />
+
+    <option value="CA" name="California" />
+    <option value="CO" name="Colorado" />
+    <option value="CT" name="Connecticut" />
+    <option value="DE" name="Delaware" />
+    <option value="DC" name="District of Columbia" />
+    <option value="FL" name="Florida" />
+
+    <option value="GA" name="Georgia" />
+    <option value="HI" name="Hawaii" />
+    <option value="ID" name="Idaho" />
+    <option value="IL" name="Illinois" />
+    <option value="IN" name="Indiana" />
+    <option value="IA" name="Iowa" />
+
+    <option value="KS" name="Kansas" />
+    <option value="KY" name="Kentucky" />
+    <option value="LA" name="Louisiana" />
+    <option value="ME" name="Maine" />
+    <option value="MD" name="Maryland" />
+    <option value="MA" name="Massachusetts" />
+
+    <option value="MI" name="Michigan" />
+    <option value="MN" name="Minnesota" />
+    <option value="MS" name="Mississippi" />
+    <option value="MO" name="Missouri" />
+    <option value="MT" name="Montana" />
+    <option value="NE" name="Nebraska" />
+
+    <option value="NV" name="Nevada" />
+    <option value="NH" name="New Hampshire" />
+    <option value="NJ" name="New Jersey" />
+    <option value="NM" name="New Mexico" />
+    <option value="NY" name="New York" />
+    <option value="NC" name="North Carolina" />
+
+    <option value="ND" name="North Dakota" />
+    <option value="OH" name="Ohio" />
+    <option value="OK" name="Oklahoma" />
+    <option value="OR" name="Oregon" />
+    <option value="PA" name="Pennsylvania" />
+    <option value="RI" name="Rhode Island" />
+
+    <option value="SC" name="South Carolina" />
+    <option value="SD" name="South Dakota" />
+    <option value="TN" name="Tennessee" />
+    <option value="TX" name="Texas" />
+    <option value="UT" name="Utah" />
+    <option value="VT" name="Vermont" />
+
+    <option value="VA" name="Virginia" />
+    <option value="WA" name="Washington" />
+    <option value="WV" name="West Virginia" />
+    <option value="WI" name="Wisconsin" />
+    <option value="WY" name="Wyoming" />
+    <option value="PR" name="Puerto Rico" />
+
+    <option value="VI" name="U.S. Virgin Islands" />
+    <option value="MP" name="Northern Mariana Is." />
+    <option value="GU" name="Guam" />
+    <option value="AS" name="American Samoa" />
+    <option value="PW" name="Palau" />
+    <option value="AA" name="Armed Forces Americas" />
+
+    <option value="AE" name="Armed Forces Europe" />
+    <option value="AP" name="Armed Forces Pacific" />
+</UsStates.xml>

@@ -1,0 +1,39 @@
+<%@ Master Language="VB" CodeFile="TopContainer.master.vb" Inherits="TopContainer"%>
+<%@ Register Src="~/WebUserControls/TopHeader.ascx" TagPrefix="wuc" TagName="TopHeader" %>
+<%@ Register Src="~/WebUserControls/CSSDropDownMenu.ascx" TagPrefix="wuc" TagName="DropDownMenu" %>
+<%@ Register Src="~/WebUserControls/Footer.ascx" TagPrefix="wuc" TagName="Footer" %>
+<%@ Register Src="~/WebUserControls/TopBanner.ascx" TagPrefix="wuc" TagName="TopBanner" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+</head>
+<body>
+    <script src="<%=BaseUrl %>script/jquery.js" type="text/javascript"></script>
+    <script src="<%=BaseUrl %>script/jquery-ui.js" type="text/javascript"></script>
+    <script src="<%=BaseUrl %>script/jquery.dimensions.js" type="text/javascript"></script>
+    <script src="<%=BaseUrl %>script/jquery.tooltip.pack.js" type="text/javascript"></script>
+    <script src="<%=BaseUrl %>script/jquery.dropdown.js" type="text/javascript"></script>
+    <script src="<%=BaseUrl %>script/jquery.autocomplete.pack.js" type="text/javascript"></script>
+    <script src="<%=BaseUrl %>script/localdata.js" type="text/javascript"></script>
+    <form id="form1" runat="server">
+        <div id="container">
+            <div id="header1">
+                <wuc:TopHeader runat="server" ID="oTopHeader" />
+                <wuc:DropDownMenu runat="server" ID="oMenu" />
+                
+            </div>
+            <wuc:TopBanner runat ="server" ID ="oTopBanner" />
+            <div id="maincontent">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolderInTopContainer" runat="server">
+                </asp:ContentPlaceHolder>
+                <p>&nbsp</p>
+            </div>
+            <hr style="clear :both; margin :15px 0px" />
+            <div id="footer">
+                <wuc:Footer runat="server" ID="oFooter" />
+            </div>
+        </div>
+    </form>
+</body>
+</html>

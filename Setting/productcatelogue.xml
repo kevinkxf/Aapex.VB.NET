@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMapNodes url="ProductCatalogue.html" title="Product Catelogue"  description="See All Product Catelogue">
+	<siteMapNode url="Orthopedic.html" title="Orthopedic Products"  description="Buy Orthopedic Products" />
+	<siteMapNode url="Oncology.html" title="Oncology Products"  description="Buy Oncology Products" />
+	<siteMapNode url="Cosmetic.html" title="Cosmetic Products"  description="Buy Cosmetic Products" />
+	<siteMapNode url="BirthControl.html" title="Birth Control Products"  description="Buy Birth Control Products" />
+</siteMapNodes>

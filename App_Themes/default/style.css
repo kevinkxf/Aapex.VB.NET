@@ -1,0 +1,597 @@
+﻿
+body 
+{
+	background-color:#FFFFFF;
+	margin:0 0 0 0;
+	font-family :Arial;
+	font-size :10pt;
+}
+
+/* Page Container */
+#container
+{
+	width: 750px; 
+	margin: 0 auto;
+}
+
+/*First Header*/
+#header1
+{
+	width: 750px; 
+	margin: 0 auto;
+	height :128px
+}
+
+/*Right Side Bar*/
+#rightbar
+{
+	float:left ;
+	width :150px;
+	
+}
+
+/*left Side Bar*/
+#leftbar
+{
+	width:140px; 
+	float :left; 
+	margin :0 auto
+}
+
+#maincontent
+{
+	margin :0 auto
+}
+
+#mainbody
+{
+	float :left ;
+	margin-left :5px;
+	margin-right :5px;
+}
+
+#footer
+{
+	width: 550px; 
+	margin: 0 auto;
+	text-align :center ;
+	clear:both ;
+}
+
+.searchbar
+{
+	background-color :#e9f8ff;
+	height :28px;
+	width :200px;
+	font-size:16pt;
+}
+
+table.topsearchbar
+{
+	margin :25px 0px 0px 250px;
+}
+
+div.CssDropDownMenu
+{
+	background-repeat :repeat-x ;
+}
+
+.left
+{
+	text-align: left ;
+}
+
+.center
+{
+	text-align: center ;
+}
+
+.right
+{
+	text-align: right ;
+}
+
+.SideBarShoppingCart{background: #007234}
+b.rtop, b.rbottom{display:block;background: #FFF}
+b.rtop b, b.rbottom b{display:block;height: 1px;overflow: hidden; background: #007234}
+b.r1{margin: 0 5px}
+b.r2{margin: 0 3px}
+b.r3{margin: 0 2px}
+b.rtop b.r4, b.rbottom b.r4{margin: 0 1px;height: 2px}
+
+div.CosmeticBanner
+{
+	background-image :url("images/cosmetic_banner.gif");
+	background-repeat :no-repeat;
+	height :52px;
+	padding-top :45px;
+	padding-left :400px;
+}
+
+div.BirthControlBanner
+{
+	background-image :url("images/birthcontrol_banner.gif");
+	background-repeat :no-repeat;
+	height :52px;
+	padding-top :45px;
+	padding-left :400px;
+}
+
+div.OncologyBanner
+{
+	background-image :url("images/oncology_banner.gif");
+	background-repeat :no-repeat;
+	height :52px;
+	padding-top :45px;
+	padding-left :400px;
+}
+
+div.OrthopedicBanner
+{
+	background-image :url("images/ortho_banner.gif");
+	background-repeat :no-repeat;
+	height :52px;
+	padding-top :45px;
+	padding-left :400px;
+}
+
+div.TopBanner
+{
+	background-image :url("images/mid_banner.jpg");
+	background-repeat :no-repeat;
+	height :52px;
+	padding-top :45px;
+	padding-left :400px;
+}
+
+.DrugName
+{
+	color:#102c6d;
+	font-size:12pt;
+	font-weight :bold ;
+}
+
+.borderless
+{
+	border-bottom-style :none ;
+}
+
+.error
+{
+	color :Red ;
+	background-color:#fae600;
+}
+
+table.regular
+{
+	/*border: 1px solid #000000;
+	border-spacing: 0px;
+	border-collapse: collapse;*/
+	empty-cells: hide;
+	overflow: scroll;
+	border :solid 1px #438ED2;
+	border-collapse: collapse;
+}
+
+table.regular th
+{
+	/*background-color :#898989;*/
+	background-color: #438ed2;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left :4px;
+	color :#fffff4;
+}
+
+
+table.regular td
+{
+	padding-top: 4px;
+	padding-bottom: 4px;
+	padding-left:4px;
+}
+
+table.regular td.special
+{
+	background-color :#44b9c7;
+	font-weight :bold ;
+}
+
+span.drugname
+{
+	color :#15326e;
+	font-weight :bold ;
+}
+
+table.sideshoppingcart
+{
+	table-layout :fixed ;
+}
+
+table.sideshoppingcart th
+{
+	background-color :#abd373;
+	padding-top :8px;
+	padding-bottom :8px;
+	overflow: hidden 
+}
+
+table.sideshoppingcart td
+{
+	background-color :#abd373;
+	padding-top :8px;
+	padding-bottom :8px;
+	overflow :hidden  ;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active
+{
+	color :#0f3178 ;
+	text-decoration:none;
+	
+}
+
+.w100
+{
+	width :100%;
+}
+
+.w50
+{
+	width :50%;
+}
+
+.w25
+{
+	width :25%;
+}
+
+.bold
+{
+	font-weight :bold ;
+}
+
+.SearchBarForm input.text{
+	color: #565656;
+	width: 250px;
+	text-align: left;
+	background: #fff;
+	height:28px;
+	font-size:16pt;
+}
+.SearchBarForm input.text.active
+{
+	color: #000000;
+	width: 250px;
+	text-align: left;
+	background: #ddeff6;
+	height:28px;
+	font-size:16pt;
+}
+
+.sitemap
+{
+	margin:5px 0px 8px 0px;
+}
+
+tr.border
+{
+	border: 1px solid #438ED2;
+	border-spacing: 0px;
+	border-collapse: collapse;
+}
+
+table.inner
+{
+	border :solid 1px #438ED2;
+}
+
+table.inner th
+{
+	background-color :White ;
+	color :#438ED2;
+	font-weight :bold ;
+	padding :8px;
+	border-collapse: collapse;
+}
+
+table.inner th.border_top
+{
+	border-top :solid 1px #438ED2;
+}
+
+table.inner th.border_bottom
+{
+	border-bottom :solid 1px #438ED2;
+}
+
+table.inner th.border_left
+{
+	border-left :solid 1px #438ED2;
+}
+
+table.inner th.border_right
+{
+	border-right :solid 1px #438ED2;
+}
+
+table.inner td.border_left
+{
+	border-left :solid 1px #438ED2;
+}
+
+table.inner td.border_right
+{
+	border-right :solid 1px #438ED2;
+}
+
+span.pricebeat
+{
+	background-color :Yellow ;
+	color :Red ;
+}
+
+table.volume
+{
+	empty-cells: hide;
+	overflow: scroll;
+	border :solid 1px #097738;
+	border-collapse: collapse;
+	width :100%;
+	display :none;
+}
+
+table.volume th
+{
+	background-color: #097738;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left :4px;
+	color :#fffff4;
+}
+
+
+table.volume td
+{
+	background-color: #e1f9c5;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	padding-left:4px;
+}
+
+table.pricebeat
+{
+	empty-cells: hide;
+	overflow: scroll;
+	border :solid 1px #438ed2;
+	border-collapse: collapse;
+	width :100%;
+	display :none;
+}
+
+table.pricebeat th
+{
+	background-color: #438ed2;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left :4px;
+	color :#fffff4;
+}
+
+
+table.pricebeat td
+{
+	background-color: #eaf7ff;
+	padding:4px 20px;
+}
+
+ul.arrow li
+{
+	list-style-image:url("images/bullet.gif");
+	color :#122e77;
+	font-size:11pt;
+	padding :2px 5px 5px 5px;
+}
+
+.darkblue
+{
+	color :#3e5392;
+}
+
+.darkgreen
+{
+	color :#057430;
+}
+
+table.new
+{
+	empty-cells: hide;
+	overflow: scroll;
+	border :solid 1px #448dd1;
+	border-collapse: collapse;
+}
+
+table.new th
+{
+	background-color: #eaf7ff;
+	padding :8px 15px;
+	color :#3e5392;
+}
+
+
+table.new td
+{
+	background-color: #eaf7ff;
+	padding :4px 15px;
+}
+
+h3.title
+{
+	color :#0e327c;
+	font-size:11pt;
+}
+
+
+ol.faq li
+{
+	color:#0F3178;
+}
+
+ol.anwser li
+{
+	color:#4791ce;
+}
+
+ol.anwser li p
+{
+	color:#000000;
+}
+
+ol.anwser h3
+{
+	color:#4791ce;
+}
+
+ol.anwser a,
+ol.anwser a:link,
+ol.anwser a:visited,
+ol.anwser a:hover,
+ol.anwser a:active
+{
+	color:#000000;
+}
+
+span.blue
+{
+	color:#4791CE;
+}
+
+table.f11
+{
+	font-size :11px;
+}
+
+table.f12
+{
+	font-size :12px;
+}
+
+table.f13
+{
+	font-size :13px;
+}
+
+table.f14
+{
+	font-size :14px;
+}
+
+table.fullheight
+{
+	height :100%;
+}
+
+table.addresslist
+{
+	empty-cells: hide;
+	overflow: scroll;
+	border :none;
+	border-collapse: collapse;
+}
+
+table.addresslist td
+{
+	padding :4px 15px;
+}
+
+table.addresslist th
+{
+	padding :8px 15px;
+	color :#3e5392;
+}
+
+div.footertext
+{
+	font-size :8pt;
+	color:#777777;
+	width:450px;
+	margin :0 auto;
+}
+
+div.thumbicon
+{
+	width:290px;
+	margin :30px auto;
+}
+
+div.drugmessage
+{
+	font-size:8pt;
+}
+
+div.sealincart
+{
+	padding-left:412px;
+	display:inline;
+}
+
+span.instock
+{
+	font-size :17px;
+	font-weight :bold;
+	color:#057430;
+}
+
+div.consent
+{
+	
+}
+
+div.cclogo
+{
+	width:104px;
+	margin :0 auto;
+}
+
+div.agreement
+{
+	background: white none repeat scroll 0% 0%; 
+	margin-bottom: 12pt; 
+	vertical-align: top;
+	color:#444444;
+	font-family :"Verdana","sans-serif";
+}
+
+div.agreement ol li
+{
+	padding :6px 0px;
+}
+
+div.agreement ol ul
+{
+	list-style-type :none ;
+}
+div.agreement ol ul li
+{
+	padding :6px 0px;
+}
+
+div.agreement span.title
+{
+	font-size: 9pt; 
+	text-decoration:underline;
+	font-weight :bolder ;
+}
+
+#tooltip {
+	position: absolute;
+	z-index: 3000;
+	border: 1px solid #111;
+	background-color: #eee;
+	padding: 5px;
+	opacity: 0.85;
+}
+#tooltip h3, #tooltip div { margin: 0; }

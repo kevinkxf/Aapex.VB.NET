@@ -1,0 +1,45 @@
+<%@ Master Language="VB" CodeFile="MasterPage_1.master.vb" Inherits="MasterPage_1"
+    MasterPageFile="~/TopContainer.master" %>
+
+<%@ Register Src="~/WebUserControls/SideBarMenu.ascx" TagPrefix="wuc" TagName="SideBarMenu" %>
+<%@ Register Src="~/WebUserControls/ShoppingCartSideBar.ascx" TagPrefix="wuc" TagName="SideBarShoppingCart" %>
+<%@ Register Src="~/WebUserControls/TopBanner.ascx" TagPrefix="wuc" TagName="TopBanner" %>
+<%@ Register Src="~/WebUserControls/FeatureProduct.ascx" TagPrefix="wuc" TagName="FeatureProduct" %>
+<%@ Register Src="~/WebUserControls/SideBarLogin.ascx" TagPrefix="wuc" TagName="SideBarLogin" %>
+<%@ Register Src="~/WebUserControls/McAfeeSeal.ascx" TagPrefix="wuc" TagName="Seal" %>
+<%@ Register Src="~/WebUserControls/LiveChat.ascx" TagPrefix="wuc" TagName="LiveChat" %>
+<asp:Content ContentPlaceHolderID="ContentPlaceHolderInTopContainer" ID="Content"
+    runat="server">
+    <div id="leftbar" class="center">
+        <wuc:SideBarMenu runat="server" ID="oSideBarMenu" />
+        <br />
+        <br />
+        <wuc:SideBarLogin ID="SideBarLogin1" runat="server" />
+        <br />
+        <br />
+        <wuc:Seal runat="server" />
+        <wuc:SideBarShoppingCart runat="server" ID="oSideBarShoppingCart" />
+        <br />
+        <wuc:LiveChat ID="LiveChat1" runat ="server" />
+        <br />
+        <div class="cclogo">
+            <asp:Image runat="server" ID="image5" SkinID="Visa_Banner" />
+            <asp:Image runat="server" ID="image6" SkinID="Master_Banner" />
+            <asp:Image runat="server" ID="image7" SkinID="Amex_Banner" />
+            <asp:Image runat="server" ID="image8" SkinID="Discover_Banner" />
+        </div>
+        <br />
+        <asp:HyperLink runat="server" NavigateUrl="~/ProductCert.html"><asp:Image runat="server" SkinID="QuanlityLogo" /></asp:HyperLink>
+    </div>
+    <div id="mainbody" style="width: 445px">
+        <div class="sitemap">
+            <asp:SiteMapPath ID="spSitePath" runat="server">
+            </asp:SiteMapPath>
+        </div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolderInMasterPage" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <div id="rightbar">
+        <wuc:FeatureProduct runat="server" ID="oFeatureProduct" />
+    </div>
+</asp:Content>

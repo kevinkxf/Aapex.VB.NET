@@ -1,0 +1,159 @@
+<%--
+Default skin template. The following skins are provided as examples only.
+
+1. Named control skin. The SkinId should be uniquely defined because
+   duplicate SkinId's per control type are not allowed in the same theme.
+
+<asp:GridView runat="server" SkinId="gridviewSkin" BackColor="White" >
+   <AlternatingRowStyle BackColor="Blue" />
+</asp:GridView>
+
+2. Default skin. The SkinId is not defined. Only one default 
+   control skin per control type is allowed in the same theme.
+
+<asp:Image runat="server" ImageUrl="~/images/image1.jpg" />
+--%>
+<%--Product Side Image--%>
+<asp:Image runat="server" ImageUrl="images/logo.gif" SkinID="TopLogo"/>
+<asp:Image runat="server" ImageUrl="images/FeatureProduct.gif" SkinID="FeatureProduct"/>
+<asp:Image runat="server" ImageUrl="images/RestylaneSide.gif" SkinID="Restylane"/>
+<asp:Image runat="server" ImageUrl="images/RadiesseSide.gif" SkinID="Radiesse"/>
+<asp:Image runat="server" ImageUrl="images/JuvedermSide.gif" SkinID="Juvederm"/>
+<asp:Image runat="server" ImageUrl="images/HyalganSide.gif" SkinID="Hyalgan"/>
+<asp:Image runat="server" ImageUrl="images/EuflexxaSide.gif" SkinID="Euflexxa"/>
+<asp:Image runat="server" ImageUrl="images/SynviscSide.gif" SkinID="Synvisc"/>
+
+<asp:Image runat="server" ImageUrl="images/birthcontrol_thumb.gif" SkinID="Birthcontrol_Icon"/>
+<asp:Image runat="server" ImageUrl="images/orthopedic_thumb.gif" SkinID="Orthopedic_Icon"/>
+<asp:Image runat="server" ImageUrl="images/oncology_thumb.gif" SkinID="Oncology_Icon"/>
+<asp:Image runat="server" ImageUrl="images/cosmetic_thumb.gif" SkinID="Cosmetic_Icon"/>
+<asp:Image runat="server" ImageUrl="images/cert_aapex.jpg" SkinID="ProductCert"/>
+<%--Product Side Image End--%>
+
+<%--Banner Image--%>
+<asp:Image runat="server" ImageUrl="images/order_navbutton.gif" SkinID="PlaceOrder"/>
+<asp:Image runat="server" ImageUrl="images/talktous_button.gif" SkinID="TalkToUs"/>
+<asp:Image runat="server" ImageUrl="images/ortho_banner.gif" SkinID="ortho_banner"/>
+<%--Banner Image End--%>
+
+<%--Creadit Card Image--%>
+<asp:Image runat="server" ImageUrl="images/cc-visa.gif" SkinID="Visa_Banner"/>
+<asp:Image runat="server" ImageUrl="images/cc-mc.gif" SkinID="Master_Banner"/>
+<asp:Image runat="server" ImageUrl="images/cc-amex.gif" SkinID="Amex_Banner"/>
+<asp:Image runat="server" ImageUrl="images/cc-discover.gif" SkinID="Discover_Banner"/>
+<asp:Image runat="server" ImageUrl="images/geotrust_sm.gif" SkinID="GeoTrust_Logo"/>
+<asp:Image runat="server" ImageUrl="images/productguarantee.gif" SkinID="Product_Guarantee"/>
+<asp:Image runat="server" ImageUrl="images/lowpriceguarantee.gif" SkinID="LowPrice_Guarantee"/>
+<%--Banner Image End--%>
+
+<%--Left Side Images--%>
+<asp:Image runat="server" ImageUrl="images/guaranteed_badge.jpg" SkinID="QuanlityLogo"/>
+<asp:Image runat="server" ImageUrl="images/howto_navbutton.gif" SkinID="Side_How_To_Order" />
+<asp:Image runat="server" ImageUrl="images/about_navbutton.gif" SkinID="Side_About_us" />
+<asp:Image runat="server" ImageUrl="images/faq_navbutton.gif" SkinID="Side_FAQ" />
+<asp:Image runat="server" ImageUrl="images/contact_navbutton.gif" SkinID="Side_Contact_Us" />
+<asp:Image runat="server" ImageUrl="images/account_navbutton.gif" SkinID="Side_Your_Account" />
+<%--Left Side Images End--%>
+
+<%--CSS DropDown Menu Images--%>
+<asp:Image runat="server" ImageUrl="images/birthcontrol_nav.gif" SkinID="Birthcontrolc_Menu"/>
+<asp:Image runat="server" ImageUrl="images/Orthopedic.gif" SkinID="Orthopedic"/>
+<asp:Image runat="server" ImageUrl="images/MenuSpacer.gif" SkinID="MenuSpacer"/>
+<asp:Image runat="server" ImageUrl="images/Oncology.gif" SkinID="Oncology"/>
+<asp:Image runat="server" ImageUrl="images/cosmetic_nav.gif" SkinID="Cosmetic_Menu"/>
+<asp:Image runat="server" ImageUrl="images/Cosmetic.gif" SkinID="Cosmetic"/>
+<asp:Image runat="server" ImageUrl="images/BirthControl.gif" SkinID="BirthControl"/>
+<asp:Image runat="server" ImageUrl="images/productcatalog_nav.gif" SkinID="Catelogue"/>
+<asp:Image runat="server" ImageUrl="images/partnerships_nav.gif" SkinID="Partnership_Menu"/>
+<asp:Image runat="server" ImageUrl="images/anthelios_nav.gif" SkinID="Anthelios_Menu"/>
+<asp:Image runat="server" ImageUrl="images/botox_nav.gif" SkinID="Botox_Menu"/>
+<asp:Image runat="server" ImageUrl="images/duroland_nav.gif" SkinID="Duroland_Menu"/>
+<asp:Image runat="server" ImageUrl="images/dysport_nav.gif" SkinID="Dysport_Menu"/>
+<asp:Image runat="server" ImageUrl="images/emla_nav.gif" SkinID="Emla_Menu"/>
+<asp:Image runat="server" ImageUrl="images/euflexxa_nav.gif" SkinID="Euflexxa_Menu"/>
+<asp:Image runat="server" ImageUrl="images/hyalgan_nav.gif" SkinID="Hyalgan_Menu"/>
+<asp:Image runat="server" ImageUrl="images/hylexin_nav.gif" SkinID="Hylexin_Menu"/>
+<asp:Image runat="server" ImageUrl="images/implanon_nav.gif" SkinID="Implanon_Menu"/>
+<asp:Image runat="server" ImageUrl="images/juvederm_nav.gif" SkinID="Juvederm_Menu"/>
+<asp:Image runat="server" ImageUrl="images/kinerase_nav.gif" SkinID="Kinerase_Menu"/>
+<asp:Image runat="server" ImageUrl="images/lustra_nav.gif" SkinID="Lustra_Menu"/>
+<asp:Image runat="server" ImageUrl="images/mirena_nav.gif" SkinID="Mirena_Menu"/>
+<asp:Image runat="server" ImageUrl="images/neovisc_nav.gif" SkinID="Neovisc_Menu"/>
+<asp:Image runat="server" ImageUrl="images/ombrelle_nav.gif" SkinID="Ombrelle_Menu"/>
+<asp:Image runat="server" ImageUrl="images/oncology_nav.gif" SkinID="Oncology_Menu"/>
+<asp:Image runat="server" ImageUrl="images/orthopedic_nav.gif" SkinID="Orthopedic_Menu"/>
+<asp:Image runat="server" ImageUrl="images/orthovisc_nav.gif" SkinID="Orthovisc_Menu"/>
+<asp:Image runat="server" ImageUrl="images/ostenil_nav.gif" SkinID="Ostenil_Menu"/>
+<asp:Image runat="server" ImageUrl="images/paragard_nav.gif" SkinID="Paragard_Menu"/>
+<asp:Image runat="server" ImageUrl="images/perlane_nav.gif" SkinID="Perlane_Menu"/>
+<asp:Image runat="server" ImageUrl="images/radiesse_nav.gif" SkinID="Radiesse_Menu"/>
+<asp:Image runat="server" ImageUrl="images/reloxin_nav.gif" SkinID="Reloxin_Menu"/>
+<asp:Image runat="server" ImageUrl="images/restylane_nav.gif" SkinID="Restylane_Menu"/>
+<asp:Image runat="server" ImageUrl="images/sculptra_nav.gif" SkinID="Sculptra_Menu"/>
+<asp:Image runat="server" ImageUrl="images/strivectin_nav.gif" SkinID="Strivectin_Menu"/>
+<asp:Image runat="server" ImageUrl="images/supartz_nav.gif" SkinID="Supartz_Menu"/>
+<asp:Image runat="server" ImageUrl="images/suplasyn_nav.gif" SkinID="Suplasyn_Menu"/>
+<asp:Image runat="server" ImageUrl="images/surgiderm_nav.gif" SkinID="Surgiderm_Menu"/>
+<asp:Image runat="server" ImageUrl="images/synvisc_nav.gif" SkinID="Synvisc_Menu"/>
+<%--CSS DropDown Menu Images End--%>
+
+<%--Price Beat Images--%>
+<asp:Image runat="server" ImageUrl="images/price_beat_button.gif" SkinID="Price_Beat" AlternateText="Price Beat" />
+<asp:Image runat="server" ImageUrl="images/calculate_new_price.gif" SkinID="Calculate_New_Price" AlternateText="Calculate New Price"/>
+<asp:Image runat="server" ImageUrl="images/close.gif" SkinID="Close_PB" AlternateText="Close_PB"/>
+<asp:Image runat="server" ImageUrl="images/img_price_beat.gif" SkinID="ImgPrice_Beat" />
+<asp:ImageButton runat="server" ImageUrl="images/buy_with_new_price.gif" SkinID="Btn_Buy_With_New_Price" />
+<%--Price Beat Images End--%>
+
+<%--Volume Discount Images--%>
+<asp:Image runat="server" ImageUrl="images/volumedisc_gfx.gif" SkinID="ImgVolume_Discount" />
+<asp:Image runat="server" ImageUrl="images/bulk_request.gif" SkinID="Bulk_Request" AlternateText="Bulk Request"/>
+<asp:Image runat="server" ImageUrl="images/closegreen_gfx.gif" SkinID="Close_BR" AlternateText="Close_BR"/>
+<asp:ImageButton runat="server" ImageUrl="images/submit_gfx.gif"  SkinID="Bulk_Request" AlternateText ="Submit Bulk Request"/>
+<%--Volume Discount Images End--%>
+
+<%--Shopping Cart Images--%>
+<asp:Image runat="server" ImageUrl="images/checkout_gfx.gif" SkinID="Side_Check_Out" />
+<asp:Image runat="server" ImageUrl="images/editcart_gfx.gif" SkinID="Side_Edit_Cart" />
+<asp:Image runat="server" ImageUrl="images/shoppingcart_header.jpg" SkinID="Side_Header" />
+<asp:ImageButton runat="server" ImageUrl="images/addtocart_button.gif" SkinID="Add_To_Cart" />
+<asp:ImageButton runat="server" ImageUrl="images/delete_item.gif" SkinID="Delete_Item" />
+<asp:ImageButton runat="server" ImageUrl="images/update_cart.jpg"  SkinID="Update Cart" AlternateText ="Update Cart"/>
+<asp:ImageButton runat="server" ImageUrl="images/check_out.gif"  SkinID="Check Out" AlternateText ="Check Outt"/>
+<asp:ImageButton runat="server" ImageUrl="images/remove_all.jpg"  SkinID="Empty Cart" AlternateText ="Remove All"/>
+<asp:ImageButton runat="server" ImageUrl="images/submit.gif"  SkinID="Btn_Submit" AlternateText ="Submit"/>
+<asp:ImageButton runat="server" ImageUrl="images/submitgreen_gfx.gif"  SkinID="Btn_Submit_Green" AlternateText ="Submit"/>
+<asp:ImageButton runat="server" ImageUrl="images/change-payment.gif"  SkinID="Btn_Change_Payment" AlternateText ="Change Payment"/>
+<%--Shopping Cart Images End--%>
+
+<%--MyAccount Images--%>
+<asp:Image runat="server" ImageUrl="images/changepw_gfx.gif" SkinID="Change_Password" />
+<asp:Image runat="server" ImageUrl="images/updateprofile_gfx.gif" SkinID="Update_Profile" />
+<asp:Image runat="server" ImageUrl="images/orderhistory_gfx.gif" SkinID="Check_Order_History" />
+<asp:Image runat="server" ImageUrl="images/addressbook_gfx.gif" SkinID="Address_Book" />
+<%--MyAccount Images End--%>
+
+<%--Address Book Images--%>
+<asp:ImageButton runat="server" ImageUrl="images/change_address.gif"  SkinID="Change Address" AlternateText ="Change Address"/>
+<asp:ImageButton runat="server" ImageUrl="images/add.jpg"  SkinID="Add Address" AlternateText ="Add"/>
+<asp:ImageButton runat="server" ImageUrl="images/update.jpg"  SkinID="Update Address" AlternateText ="Update"/>
+<asp:ImageButton runat="server" ImageUrl="images/select.gif"  SkinID="Select Address" AlternateText ="Selecte"/>
+<asp:ImageButton runat="server" ImageUrl="images/edit.gif"  SkinID="Edite Address" AlternateText ="Edit"/>
+<asp:ImageButton runat="server" ImageUrl="images/delete.gif"  SkinID="Delete Address" AlternateText ="Delete"/>
+<%--Address Book Images End--%>
+<asp:Image runat="server" ImageUrl="images/talktous_gfx.gif" SkinID="ImgTalk_To_Us" />
+
+<asp:Image runat="server" ImageUrl="images/create_new_account.jpg" SkinID="Create_New_Account" />
+
+<asp:Image runat="server" ImageUrl="images/footer_text.png" SkinID="Footer_Text" />
+<asp:ImageButton runat="server" ImageUrl="images/search_button.gif" SkinID="Header_Search_Button" />
+<asp:ImageButton runat="server" ImageUrl="images/purchase.gif" SkinID="Purchase" />
+<asp:ImageButton runat="server" ImageUrl="images/go_back.gif" SkinID="Go_Back" />
+<asp:ImageButton runat="server" ImageUrl="images/create_new_account.jpg" SkinID="Create_New_Account" />
+<asp:ImageButton runat="server" ImageUrl="images/sign_in.jpg" SkinID="Sign_In" />
+<asp:ImageButton runat="server" ImageUrl="images/register.jpg" SkinID="Register" />
+
+
+
+<asp:TextBox runat ="server" BorderStyle="Solid" BorderColor="#428CD5" BorderWidth="1"></asp:TextBox>
+<asp:DropDownList runat ="server" BorderStyle="Solid" BorderColor="#428CD5" BorderWidth="1"></asp:DropDownList>

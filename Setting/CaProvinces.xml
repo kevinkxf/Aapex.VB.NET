@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CaProvinces>
+  <option value="" name="" />
+  <option value="AB" name="Alberta" />
+  <option value="BC" name="British Columbia" />
+  <option value="MB" name="Manitoba" />
+  <option value="NB" name="New Brunswick" />
+  <option value="NL" name="Newfoundland" />
+  <option value="NS" name="Nova Scotia" />
+  <option value="NT" name="Northwest Territories" />
+  <option value="NU" name="Nunavut" />
+  <option value="ON" name="Ontario" />
+  <option value="PE" name="Prince Edward Island" />
+  <option value="QC" name="Quebec" />
+  <option value="SK" name="Saskatchewan" />
+  <option value="YT" name="Yukon" />
+</CaProvinces>

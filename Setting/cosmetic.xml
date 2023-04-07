@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMapNodes url="Cosmetic.html" title="Cosmetic Products"  description="See All Cosmetic Products">
+	<siteMapNode url="Botox_Detail.html" title="Botox"  description="Buy Botox" />
+	<siteMapNode url="Dysport_Detail.html" title="Dysport"  description="Buy Dysport" />
+	<siteMapNode url="Restylane_Detail.html" title="Restylane"  description="Buy Restylane" />
+	<siteMapNode url="Perlane_Detail.html" title="Perlane"  description="Buy Perlane" />
+	<siteMapNode url="Juvederm_Detail.html" title="Juvederm"  description="Buy Juvederm" />
+	<siteMapNode url="Radiesse_Detail.html" title="Radiesse"  description="Buy Radiesse" />
+	<siteMapNode url="Sculptra_Detail.html" title="Sculptra"  description="Buy Sculptra" />
+	<siteMapNode url="Surgiderm_Detail.html" title="Surgiderm"  description="Buy Surgiderm" />
+	<siteMapNode url="Anthelios_Detail.html" title="Anthelios"  description="Buy Anthelios" />
+	<siteMapNode url="Emla_Detail.html" title="Emla"  description="Buy Emla" />
+	<siteMapNode url="Lustra_Detail.html" title="Lustra"  description="Buy Lustra" />
+	<siteMapNode url="Ombrelle_Detail.html" title="Ombrelle"  description="Buy Ombrelle" />
+	<siteMapNode url="StriVectin_Detail.html" title="StriVectin"  description="Buy StriVectin" />
+	<siteMapNode url="Kinerase_Detail.html" title="Kinerase"  description="Buy Kinerase" />
+	<siteMapNode url="Hylexin_Detail.html" title="Hylexin"  description="Buy Hylexin" />
+</siteMapNodes>

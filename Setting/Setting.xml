@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Setting>
+	<Global>
+		<AuthorizedPage>myaccount.(aspx|html)|checkout.(aspx|html)|changepassword.(aspx|html)|edituserprofile.(aspx|html)|checkorder.(aspx|html)|addressbook.(aspx|html)</AuthorizedPage>
+		<EnforceHTTPSForSecurePage>False</EnforceHTTPSForSecurePage>
+		<SecurePage>signin.(aspx|html)|checkout.(aspx|html)</SecurePage>
+		<CompanyFullName>Aapex Health Supplies</CompanyFullName>
+		<CompanyShortName>AAPEX</CompanyShortName>
+		<TollFreeTel>1-877-325-7756</TollFreeTel>
+		<TollFreeFax>1-877-325-7757</TollFreeFax>
+		<InternationalFax>1-604-888-5678</InternationalFax>
+		<InternationalTel>1-604-888-1234</InternationalTel>
+		<AddressLine1>PO Box 35546, Bridgeport RPO</AddressLine1>
+		<AddressLine2>Richmond BC, Canada V6X 4G6</AddressLine2>
+		<MailingAddress>
+			Aapex Health Supplies.Com<br/>PO Box 35546<br/>Bridgeport RD<br/>Richmond, BC<br/>Canada V6X 4G6
+		</MailingAddress>
+		<AffiliateID>60</AffiliateID>
+		<DefaultShippingFee>25</DefaultShippingFee>
+		<LaunchDate>June 1, 2009</LaunchDate>
+		<AgentID/>
+		<WebSiteName>AapexHealthSupplies.com</WebSiteName>
+		<ExternalID/>
+		<ContactEmail>info@aapexhealthsupplies.com</ContactEmail>
+		<VolumeDiscountEmail>kkong@canadahealthsolutions.com</VolumeDiscountEmail>
+		<PartnershipEmail>info@aapexhealthsupplies.com,partners@aapexhealthsupplies.com</PartnershipEmail>
+		<HoursOfOperations>
+			Monday-Friday: 7:00am to 5:00pm PST<br/>Fax Line: 24hrs / 7 days a week<br/>Message Service: 24hrs / 7 days a week
+		</HoursOfOperations>
+		<WebSiteURL>http://www.aapexhealthsupplies.com</WebSiteURL>
+		<SecureWebSiteURL>https://www.aapexhealthsupplies.com</SecureWebSiteURL>
+	</Global>
+</Setting>

@@ -1,0 +1,165 @@
+Domain: chs-desktop99 :: FATAL :: 
+Logger: QSLib.Providers.LogProvider.Log4NetProvider
+Thread: 1
+Date: 2011-03-23 15:47:51,847
+Message: 
+Message: qs_SqlDataProvider.GetIPAddressCountryInfoByIP
+ Source: 
+ Stack: 
+
+
+Domain: chs-desktop99 :: FATAL :: 
+Logger: QSLib.Providers.LogProvider.Log4NetProvider
+Thread: 1
+Date: 2011-03-23 15:47:51,956
+Message: 
+Message: The current TransactionScope is already complete.
+ Source: System.Transactions
+ Stack:    at System.Transactions.Transaction.get_Current()
+   at Microsoft.Practices.EnterpriseLibrary.Data.TransactionScopeConnections.GetConnection(Database db)
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.GetOpenConnection(Boolean disposeInnerConnection)
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.GetOpenConnection()
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteNonQuery(DbCommand command)
+   at QSLib.Providers.DataProvider.QSSqlDataProvider.AddIpHistory(Int32 UserId, String Ip, String Description) in D:\KevinWork\QSLib\QSLib\Providers\DataProvider\QSSqlDataProvider.vb:line 989
+
+
+Domain: chs-desktop99 :: FATAL :: 
+Logger: QSLib.Providers.LogProvider.Log4NetProvider
+Thread: 1
+Date: 2011-03-23 15:50:30,816
+Message: 
+Message: qs_SqlDataProvider.GetIPAddressCountryInfoByIP
+ Source: 
+ Stack: 
+
+
+Domain: chs-desktop99 :: FATAL :: 
+Logger: QSLib.Providers.LogProvider.Log4NetProvider
+Thread: 1
+Date: 2011-03-23 15:50:42,754
+Message: 
+Message: The current TransactionScope is already complete.
+ Source: System.Transactions
+ Stack:    at System.Transactions.Transaction.get_Current()
+   at Microsoft.Practices.EnterpriseLibrary.Data.TransactionScopeConnections.GetConnection(Database db)
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.GetOpenConnection(Boolean disposeInnerConnection)
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.GetOpenConnection()
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteNonQuery(DbCommand command)
+   at QSLib.Providers.DataProvider.QSSqlDataProvider.AddIpHistory(Int32 UserId, String Ip, String Description) in D:\KevinWork\QSLib\QSLib\Providers\DataProvider\QSSqlDataProvider.vb:line 989
+
+
+Domain: chs-desktop99 :: FATAL :: 
+Logger: QSLib.Providers.LogProvider.Log4NetProvider
+Thread: 1
+Date: 2011-03-23 15:56:44,834
+Message: 
+Message: qs_SqlDataProvider.GetIPAddressCountryInfoByIP
+ Source: 
+ Stack: 
+
+
+Domain: chs-desktop99 :: FATAL :: 
+Logger: QSLib.Providers.LogProvider.Log4NetProvider
+Thread: 1
+Date: 2011-03-23 15:56:44,881
+Message: 
+Message: The current TransactionScope is already complete.
+ Source: System.Transactions
+ Stack:    at System.Transactions.Transaction.get_Current()
+   at Microsoft.Practices.EnterpriseLibrary.Data.TransactionScopeConnections.GetConnection(Database db)
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.GetOpenConnection(Boolean disposeInnerConnection)
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.GetOpenConnection()
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteNonQuery(DbCommand command)
+   at QSLib.Providers.DataProvider.QSSqlDataProvider.AddIpHistory(Int32 UserId, String Ip, String Description) in D:\KevinWork\QSLib\QSLib\Providers\DataProvider\QSSqlDataProvider.vb:line 989
+
+
+Domain: chs-desktop99 :: FATAL :: 
+Logger: QSLib.Providers.LogProvider.Log4NetProvider
+Thread: 1
+Date: 2011-03-23 16:00:30,961
+Message: 
+Message: qs_SqlDataProvider.GetIPAddressCountryInfoByIP
+ Source: 
+ Stack: 
+
+
+Domain: chs-desktop99 :: FATAL :: 
+Logger: QSLib.Providers.LogProvider.Log4NetProvider
+Thread: 1
+Date: 2011-03-23 16:00:30,961
+Message: 
+Message: The current TransactionScope is already complete.
+ Source: System.Transactions
+ Stack:    at System.Transactions.Transaction.get_Current()
+   at Microsoft.Practices.EnterpriseLibrary.Data.TransactionScopeConnections.GetConnection(Database db)
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.GetOpenConnection(Boolean disposeInnerConnection)
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.GetOpenConnection()
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteNonQuery(DbCommand command)
+   at QSLib.Providers.DataProvider.QSSqlDataProvider.AddIpHistory(Int32 UserId, String Ip, String Description) in D:\KevinWork\QSLib\QSLib\Providers\DataProvider\QSSqlDataProvider.vb:line 989
+
+
+Domain: chs-desktop99 :: FATAL :: 
+Logger: QSLib.Providers.LogProvider.Log4NetProvider
+Thread: 7
+Date: 2011-03-23 16:02:26,587
+Message: 
+Message: Failed to convert parameter value from a String to a Int16.
+ Inner Exception: Input string was not in a correct format.
+ Source: System.Data
+ Stack:    at System.Data.SqlClient.SqlParameter.CoerceValue(Object value, MetaType destinationType)
+   at System.Data.SqlClient.SqlParameter.GetCoercedValue()
+   at System.Data.SqlClient.SqlParameter.Validate(Int32 index, Boolean isCommandProc)
+   at System.Data.SqlClient.SqlCommand.SetUpRPCParameters(_SqlRPC rpc, Int32 startCount, Boolean inSchema, SqlParameterCollection parameters)
+   at System.Data.SqlClient.SqlCommand.BuildRPC(Boolean inSchema, SqlParameterCollection parameters, _SqlRPC& rpc)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.DoExecuteNonQuery(DbCommand command)
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteNonQuery(DbCommand command)
+   at QSLib.Providers.DataProvider.QSSqlDataProvider.AddIpHistory(Int32 UserId, String Ip, String Description) in D:\KevinWork\QSLib\QSLib\Providers\DataProvider\QSSqlDataProvider.vb:line 989
+
+
+Domain: chs-desktop99 :: FATAL :: 
+Logger: QSLib.Providers.LogProvider.Log4NetProvider
+Thread: 7
+Date: 2011-03-23 16:05:01,212
+Message: 
+Message: Failed to convert parameter value from a String to a Int16.
+ Inner Exception: Input string was not in a correct format.
+ Source: System.Data
+ Stack:    at System.Data.SqlClient.SqlParameter.CoerceValue(Object value, MetaType destinationType)
+   at System.Data.SqlClient.SqlParameter.GetCoercedValue()
+   at System.Data.SqlClient.SqlParameter.Validate(Int32 index, Boolean isCommandProc)
+   at System.Data.SqlClient.SqlCommand.SetUpRPCParameters(_SqlRPC rpc, Int32 startCount, Boolean inSchema, SqlParameterCollection parameters)
+   at System.Data.SqlClient.SqlCommand.BuildRPC(Boolean inSchema, SqlParameterCollection parameters, _SqlRPC& rpc)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.DoExecuteNonQuery(DbCommand command)
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteNonQuery(DbCommand command)
+   at QSLib.Providers.DataProvider.QSSqlDataProvider.AddIpHistory(Int32 UserId, String Ip, String Description) in D:\KevinWork\QSLib\QSLib\Providers\DataProvider\QSSqlDataProvider.vb:line 989
+
+
+Domain: chs-desktop99 :: FATAL :: 
+Logger: QSLib.Providers.LogProvider.Log4NetProvider
+Thread: 1
+Date: 2011-03-23 16:05:47,603
+Message: 
+Message: Procedure or Function 'QS_MMS_SetCategoriesByCateUrl' expects parameter '@CategoryName', which was not supplied.
+ Source: .Net SqlClient Data Provider
+ Stack:    at System.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection)
+   at System.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj)
+   at System.Data.SqlClient.TdsParser.Run(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj)
+   at System.Data.SqlClient.SqlCommand.FinishExecuteReader(SqlDataReader ds, RunBehavior runBehavior, String resetOptionsString)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReaderTds(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, Boolean async)
+   at System.Data.SqlClient.SqlCommand.RunExecuteReader(CommandBehavior cmdBehavior, RunBehavior runBehavior, Boolean returnStream, String method, DbAsyncResult result)
+   at System.Data.SqlClient.SqlCommand.InternalExecuteNonQuery(DbAsyncResult result, String methodName, Boolean sendToPipe)
+   at System.Data.SqlClient.SqlCommand.ExecuteNonQuery()
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.DoExecuteNonQuery(DbCommand command)
+   at Microsoft.Practices.EnterpriseLibrary.Data.Database.ExecuteNonQuery(DbCommand command)
+   at QSLib.Providers.DataProvider.QSSqlDataProvider.AddIpHistory(Int32 UserId, String Ip, String Description) in D:\KevinWork\QSLib\QSLib\Providers\DataProvider\QSSqlDataProvider.vb:line 989
+
+

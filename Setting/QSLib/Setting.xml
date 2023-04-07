@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Settings>
+	<QSConnectionString>Data Source=207.6.221.139;Initial Catalog=QS_DEV_Kevin;Persist Security Info=True;User ID=www_qs;Password=sa</QSConnectionString>
+	<ShoppingCartConnectionString>Data Source=207.6.221.139;Initial Catalog=ShoppingCart_PROD;Persist Security Info=True;User ID=www_rxmednet;Password=sa</ShoppingCartConnectionString>
+	<LogFolder>LogFile</LogFolder>
+  <Prefix_DB>qs_</Prefix_DB>
+</Settings>
+
+
+

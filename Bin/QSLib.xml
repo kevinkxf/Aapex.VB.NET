@@ -1,0 +1,930 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+QSLib
+</name>
+</assembly>
+<members>
+<member name="M:QSLib.Common.Globals.GetTotalRecords(System.Data.IDataReader@)">
+ -----------------------------------------------------------------------------
+ <summary>
+ The GetTotalRecords method gets the number of Records returned.
+ </summary>
+	<param name="dr">An <see cref="T:System.Data.IDataReader"/> containing the Total no of records</param>
+	<returns>An Integer</returns>
+	<history>
+ 	[cnurse]	02/01/2006	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="T:QSLib.Entities.Drugs.DrugDescriptionInfo">
+ -----------------------------------------------------------------------------
+ Project:    QSLib
+ Namespace:  QSLib.Entities.Drugs
+ Class:      DrugDescriptionInfo
+ -----------------------------------------------------------------------------
+ <summary>
+ The DrugDescriptionInfo class is a business object class which represent the drug description infomation
+ </summary>
+	<history>
+     [cnurse]	8/10/2009	created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="T:QSLib.Entities.Orders.ShoppingCartItemCollection">
+ -----------------------------------------------------------------------------
+ Project:    QSLib
+ Namespace:  QSLib.Entities.Orders
+ Class:      ShoppingCartItemCollection
+ -----------------------------------------------------------------------------
+ <summary>
+ The ShoppingCartItemCollection class is a collection which manipulate multiple shopping cart info
+ </summary>
+	<history>
+     [cnurse]	8/10/2009	created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:QSLib.Entities.Orders.ShoppingCartItemController.GetShoppingCartByPatientID(System.Int32,System.Int32)">
+	<summary>
+ Get Shopping Cart Based On Patient ID and Affiliate ID
+ </summary>
+	<param name="intPatientID">Patient ID</param>
+	<param name="intAffiliateID">Affiliate ID</param>
+	<returns>An arrayList contains items</returns>
+	<remarks></remarks>
+</member><member name="M:QSLib.Entities.Orders.ShoppingCartItemController.GetShoppingCartByDrugID(System.Int32,System.Int32,System.Int32)">
+	<summary>
+ Get single Shopping Cart itemBased On Patient ID, Affiliate ID and Drug ID
+ </summary>
+	<param name="intPatientID">Patient ID</param>
+	<param name="intAffiliateID">Affiliate ID</param>
+	<param name="intDrugID">Drug ID</param>
+	<returns>An ShoppingCartItemInfo object is returned, if an item is found; otherwise, nothing is returned</returns>
+	<remarks></remarks>
+</member><member name="M:QSLib.Entities.Orders.ShoppingCartItemController.AddDrugToShoppingCart(System.Int32,System.Int32,System.Int32,System.Int32,System.String,System.Decimal,System.String)">
+	<summary>
+ Add a drug to shopping
+ </summary>
+	<param name="intPatientID">Patient ID</param>
+	<param name="intAffiliateID">Affiliate ID</param>
+	<param name="intDrugID">Drug ID</param>
+	<param name="intQuantityOrdered">QTY Ordered</param>
+	<param name="strIP">IP Address</param>
+	<param name="fPriceBeat">Price Beat</param>
+	<param name="strUrl">Price Beat Url</param>
+	<returns>True, if succesful</returns>
+	<remarks>If this drug already exists, the QTY ordered will be added to previous value</remarks>
+</member><member name="M:QSLib.Entities.Orders.ShoppingCartItemController.AddDrugToShoppingCart(QSLib.Entities.Orders.ShoppingCartItemInfo)">
+	<summary>
+ Add a drug to shopping
+ </summary>
+	<param name="oItem">All parameters in a ShoppingCartItemInfo object</param>
+	<returns>True, if succesful</returns>
+	<remarks>If this drug already exists, the QTY ordered will be added to previous value</remarks>
+</member><member name="M:QSLib.Entities.Orders.ShoppingCartItemController.EmptyShoppingCartByPatientID(System.Int32,System.Int32)">
+	<summary>
+ Remove all items in a patient's shopping cart
+ </summary>
+	<param name="intPatientID">Patient ID</param>
+	<param name="intAffiliateID">Affiliate ID</param>
+	<returns>True if successful</returns>
+	<remarks></remarks>
+</member><member name="M:QSLib.Common.Utilities.Null.GetNull(System.Object,System.Object)">
+	<summary>
+ convert an application encoded null value or Nothing to a database null value ( used in DAL )
+ </summary>
+	<param name="objField">Input Object</param>
+	<param name="objDBNull">Object for DBNull</param>
+	<returns>DBNull if input is Nothing or encoded Null, else return input value</returns>
+	<remarks></remarks>
+</member><member name="T:QSLib.Common.Utilities.Null">
+ -----------------------------------------------------------------------------
+ Project:    QSLib
+ Namespace:  QSLib.Common.Utilities
+ Class:      Null
+ -----------------------------------------------------------------------------
+ <summary>
+ The Null class is a helper class that represent null value for both database and business object
+ </summary>
+	<history>
+     [cnurse]	8/10/2009	created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:QSLib.Providers.Cryptography.SHA1Provider.Harsh(System.String)">
+	<summary>
+ Compute the harshed string
+ </summary>
+	<param name="strInput">Input string</param>
+	<returns>A harshed string if no error, other, return nothing</returns>
+	<remarks></remarks>
+</member><member name="M:QSLib.Common.Utilities.DataCache.SetCache(System.String,System.Object,System.TimeSpan)">
+	<summary>
+ Set cache with a sliding expiracy time
+ </summary>
+	<param name="CacheKey">key</param>
+	<param name="objObject">objecy</param>
+	<param name="objSlidingTimeSpan">Sliding expiracy time</param>
+	<remarks></remarks>
+</member><member name="M:QSLib.Common.Utilities.DataCache.SetCache(System.String,System.Object,System.DateTime)">
+	<summary>
+ Set cache with an absolute expiracy time
+ </summary>
+	<param name="CacheKey">key</param>
+	<param name="objObject">objecy</param>
+	<param name="objAbsolutiTime">expiracy time</param>
+	<remarks></remarks>
+</member><member name="M:QSLib.Common.Utilities.DataCache.SetCache(System.String,System.Object,System.String)">
+	<summary>
+ Set cache with file dependency
+ </summary>
+	<param name="CacheKey"></param>
+	<param name="objObject"></param>
+	<param name="strFile"></param>
+	<remarks></remarks>
+</member><member name="T:QSLib.Common.Utilities.DataCache">
+ -----------------------------------------------------------------------------
+ Project:    QSLib
+ Namespace:  QSLib.Common.Utilities
+ Class:      DataCache
+ -----------------------------------------------------------------------------
+ <summary>
+ The DataCache class is a facade class for the caching CachingProvider.Instance()s
+ </summary>
+	<history>
+     [cnurse]	8/10/2009	created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="T:QSLib.Entities.Drugs.DrugController">
+ -----------------------------------------------------------------------------
+ Project:    QSLib
+ Namespace:  QSLib.Entities.Drugs
+ Class:      DrugController
+ -----------------------------------------------------------------------------
+ <summary>
+ The DrugController class is a helper class which communicate with database provider,
+ munipulate business objects including "Add", "Update" "Delete" and "select"
+ </summary>
+	<history>
+     [cnurse]	8/10/2009	created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="T:QSLib.Entities.Orders.ShoppingCartItemInfo">
+ -----------------------------------------------------------------------------
+ Project:    QSLib
+ Namespace:  QSLib.Entities.Orders
+ Class:      DrugInfo
+ -----------------------------------------------------------------------------
+ <summary>
+ The ShoppingCartItemInfo class is a business object class which represent the drug infomation in shopping cart
+ </summary>
+	<history>
+     [cnurse]	8/10/2009	created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:QSLib.Providers.LogProvider.LoggerManager.LogException(System.Exception)">
+	<summary>
+ Log Exceiption as Fatal level
+ </summary>
+	<param name="ex"></param>
+	<remarks></remarks>
+</member><member name="T:QSLib.Providers.LogProvider.LoggerManager">
+ -----------------------------------------------------------------------------
+ Project:    QSLib
+ Namespace:  QSLib.Common.Utilities
+ Class:      LoggerManager
+ -----------------------------------------------------------------------------
+ <summary>
+ LoggerManager is a class that create logprovider object and write log to repositories
+ </summary>
+	<history>
+     [cnurse]	8/10/2009	created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="T:QSLib.Entities.Drugs.DrugCollection">
+ -----------------------------------------------------------------------------
+ Project:    QSLib
+ Namespace:  QSLib.Entities.Drugs
+ Class:      DrugCollection
+ -----------------------------------------------------------------------------
+ <summary>
+ The DrugCollection class is a collection which manipulate multiple drugs info
+ </summary>
+	<history>
+     [cnurse]	8/10/2009	created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:QSLib.Entities.Patients.PatientAccountController.GetPatientIDFromUsername(System.String)">
+	<summary>
+ Gets PatientID and PatientAccountID
+ </summary>
+	<param name="strUsername">User name</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:QSLib.Entities.Patients.PatientAccountController">
+ -----------------------------------------------------------------------------
+ Project:    QSLib
+ Namespace:  QSLib.Entities.Patients
+ Class:      PatientController
+ -----------------------------------------------------------------------------
+ <summary>
+ The PatientController class is a helper class which communicate with database provider,
+ munipulate business objects including "Add", "Update" "Delete" and "select"
+ </summary>
+	<history>
+     [cnurse]	8/10/2009	created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:QSLib.Common.Utilities.CBO.FillDictionaryFromReader``2(System.String,System.Data.IDataReader,System.Collections.Generic.IDictionary{``0,``1})">
+ -----------------------------------------------------------------------------
+ <summary>
+ FillDictionaryFromReader fills a dictionary of objects of a specified type 
+ from a DataReader.
+ </summary>
+	<typeparam name="TKey">The type of the key</typeparam>
+	<typeparam name="TValue">The type of the value</typeparam>
+	<param name="keyField">The key field for the object.  This is used as 
+ the key in the Dictionary.</param>
+	<param name="dr">The IDataReader to use to fill the objects</param>
+	<param name="objDictionary">The Dictionary to fill.</param>
+	<returns>A Dictionary of objects (T)</returns>
+	<history>
+ 	[cnurse]	11/30/2007	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:QSLib.Common.Utilities.CBO.FillListFromReader(System.Type,System.Data.IDataReader,System.Collections.IList,System.Boolean)">
+ -----------------------------------------------------------------------------
+ <summary>
+ FillListFromReader fills a list of objects of a specified type 
+ from a DataReader
+ </summary>
+	<param name="objType">The type of the business object</param>
+	<param name="dr">The IDataReader to use to fill the objects</param>
+	<param name="objList">The List to Fill</param>
+	<param name="closeReader">A flag that indicates whether the DataReader should be closed</param>
+	<returns>A List of objects (TItem)</returns>
+	<remarks></remarks>
+	<history>
+ 	[cnurse]	11/30/2007	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:QSLib.Common.Utilities.CBO.FillListFromReader``1(System.Data.IDataReader,System.Collections.Generic.IList{``0},System.Boolean)">
+ -----------------------------------------------------------------------------
+ <summary>
+ FillListFromReader fills a list of objects of a specified type 
+ from a DataReader
+ </summary>
+	<typeparam name="TItem">The type of the business object</typeparam>
+	<param name="dr">The IDataReader to use to fill the objects</param>
+	<param name="objList">The List to Fill</param>
+	<param name="closeReader">A flag that indicates whether the DataReader should be closed</param>
+	<returns>A List of objects (TItem)</returns>
+	<remarks></remarks>
+	<history>
+ 	[cnurse]	11/30/2007	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:QSLib.Common.Utilities.CBO.FillObjectFromReader(System.Object,System.Data.IDataReader)">
+ -----------------------------------------------------------------------------
+ <summary>
+ FillObjectFromReader fills an object from the provided DataReader.  If the object 
+ implements the IHydratable interface it will use the object's IHydratable.Fill() method.
+ Otherwise, it will use reflection to fill the object.
+ </summary>
+	<param name="objObject">The object to fill</param>
+	<param name="dr">The DataReader</param>
+	<history>
+ 	[cnurse]	11/30/2007	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:QSLib.Common.Utilities.CBO.GetColumnName(System.Reflection.PropertyInfo)">
+ -----------------------------------------------------------------------------
+ <summary>
+ GetColumnName gets the name of the Database Column that maps to the property.
+ </summary>
+	<param name="objProperty">The proeprty of the business object</param>
+	<returns>The name of the Database Column</returns>
+	<history>
+ 	[cnurse]	12/02/2007	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:QSLib.Common.Utilities.CBO.HydrateObject(System.Object,System.Data.IDataReader)">
+ -----------------------------------------------------------------------------
+ <summary>
+ HydrateObject uses reflection to hydrate an object.
+ </summary>
+	<param name="objObject">The object to Hydrate</param>
+	<param name="dr">The IDataReader that contains the columns of data for the object</param>
+	<history>
+ 	[cnurse]	11/29/2007	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:QSLib.Common.Utilities.CBO.GetObjectMapping(System.Type)">
+ -----------------------------------------------------------------------------
+ <summary>
+ GetObjectMapping gets an instance of the ObjectMappingInfo class for the type.
+ This is cached using a high priority as reflection is expensive.
+ </summary>
+	<param name="objType">The type of the business object</param>
+	<returns>An ObjectMappingInfo object representing the mapping for the object</returns>
+	<history>
+ 	[cnurse]	12/01/2007	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:QSLib.Common.Utilities.CBO.CreateObject``1">
+ -----------------------------------------------------------------------------
+ <summary>
+ CreateObject creates a new object of Type TObject.
+ </summary>
+	<typeparam name="TObject">The type of object to create.</typeparam>
+	<remarks>This overload does not initialise the object</remarks>
+	<history>
+ 	[cnurse]	11/30/2007	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:QSLib.Common.Utilities.CBO.CreateObject``1(System.Boolean)">
+ -----------------------------------------------------------------------------
+ <summary>
+ CreateObject creates a new object of Type TObject.
+ </summary>
+	<typeparam name="TObject">The type of object to create.</typeparam>
+	<param name="initialise">A flag that indicates whether to initialise the
+ object.</param>
+	<history>
+ 	[cnurse]	11/30/2007	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:QSLib.Common.Utilities.CBO.CreateObject(System.Type,System.Boolean)">
+ -----------------------------------------------------------------------------
+ <summary>
+ CreateObject creates a new object.
+ </summary>
+	<param name="objType">The type of object to create.</param>
+	<param name="initialise">A flag that indicates whether to initialise the
+ object.</param>
+	<history>
+ 	[cnurse]	11/30/2007	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:QSLib.Common.Utilities.CBO.InitializeObject(System.Object)">
+ -----------------------------------------------------------------------------
+ <summary>
+ InitializeObject initialises all the properties of an object to their 
+ Null Values.
+ </summary>
+	<param name="objObject">The object to Initialise</param>
+	<history>
+ 	[cnurse]	11/29/2007	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:QSLib.Common.Utilities.CBO.InitializeObject(System.Object,System.Type)">
+ -----------------------------------------------------------------------------
+ <summary>
+ InitializeObject initialises all the properties of an object to their 
+ Null Values.
+ </summary>
+	<param name="objObject">The object to Initialise</param>
+	<param name="objType">The type of the object</param>
+	<history>
+ 	[cnurse]	11/29/2007	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:QSLib.Common.Utilities.CBO.FillObject``1(System.Data.IDataReader)">
+ -----------------------------------------------------------------------------
+ <summary>
+ FillObject fills an object from a DataReader
+ </summary>
+	<typeparam name="TObject">The type of the object</typeparam>
+	<param name="dr">The Data Reader</param>
+	<history>
+ 	[cnurse]	11/29/2007	Documented
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:QSLib.Common.Utilities.CBO.FillObject``1(System.Data.IDataReader,System.Boolean)">
+ -----------------------------------------------------------------------------
+ <summary>
+ FillObject fills an object from a DataReader
+ </summary>
+	<typeparam name="TObject">The type of the object</typeparam>
+	<param name="dr">The Data Reader</param>
+	<param name="closeReader">A flag that indicates the reader should be closed</param>
+	<history>
+ 	[cnurse]	11/29/2007	Documented
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:QSLib.Common.Utilities.CBO.FillObject(System.Data.IDataReader,System.Type)">
+ -----------------------------------------------------------------------------
+ <summary>
+ FillObject fills an object from a DataReader
+ </summary>
+	<param name="dr">The Data Reader</param>
+	<param name="objType">The type of the object</param>
+	<history>
+ 	[cnurse]	11/29/2007	Documented
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:QSLib.Common.Utilities.CBO.FillObject(System.Data.IDataReader,System.Type,System.Boolean)">
+ -----------------------------------------------------------------------------
+ <summary>
+ FillObject fills an object from a DataReader
+ </summary>
+	<param name="dr">The Data Reader</param>
+	<param name="objType">The type of the object</param>
+	<param name="closeReader">A flag that indicates the reader should be closed</param>
+	<history>
+ 	[cnurse]	11/29/2007	Documented
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:QSLib.Common.Utilities.CBO.FillCollection(System.Data.IDataReader,System.Type)">
+ -----------------------------------------------------------------------------
+ <summary>
+ FillCollection fills a Collection of objects from a DataReader
+ </summary>
+	<param name="dr">The Data Reader</param>
+	<param name="objType">The type of the Object</param>
+	<history>
+ 	[cnurse]	11/29/2007	Documented
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:QSLib.Common.Utilities.CBO.FillCollection(System.Data.IDataReader,System.Type,System.Collections.IList@)">
+ -----------------------------------------------------------------------------
+ <summary>
+ FillCollection fills a Collection of objects from a DataReader
+ </summary>
+	<param name="dr">The Data Reader</param>
+	<param name="objType">The type of the Object</param>
+	<param name="objToFill">An IList to fill</param>
+	<history>
+ 	[cnurse]	11/29/2007	Documented
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:QSLib.Common.Utilities.CBO.FillCollection``1(System.Data.IDataReader)">
+ -----------------------------------------------------------------------------
+ <summary>
+ FillCollection fills a Collection of objects from a DataReader
+ </summary>
+	<typeparam name="TItem">The type of object</typeparam>
+	<param name="dr">The Data Reader</param>
+	<history>
+ 	[cnurse]	11/29/2007	Documented
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:QSLib.Common.Utilities.CBO.FillCollection``1(System.Data.IDataReader,System.Collections.Generic.IList{``0}@)">
+ -----------------------------------------------------------------------------
+ <summary>
+ FillCollection fills a Collection of objects from a DataReader
+ </summary>
+	<typeparam name="TItem">The type of object</typeparam>
+	<param name="objToFill">The List to fill</param>
+	<param name="dr">The Data Reader</param>
+	<history>
+ 	[cnurse]	11/29/2007	Documented
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:QSLib.Common.Utilities.CBO.FillCollection``1(System.Data.IDataReader,System.Collections.Generic.IList{``0},System.Boolean)">
+ -----------------------------------------------------------------------------
+ <summary>
+ FillCollection fills a List of objects from a DataReader
+ </summary>
+	<typeparam name="TItem">The type of the Object</typeparam>
+	<param name="objToFill">The List to fill</param>
+	<param name="dr">The Data Reader</param>
+	<param name="closeReader">A flag that indicates whether the DataReader should be closed</param>
+	<history>
+ 	[cnurse]	11/29/2007	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:QSLib.Common.Utilities.CBO.FillCollection(System.Data.IDataReader,System.Type@,System.Int32@)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Generic version of FillCollection fills a List custom business object of a specified type 
+ from the supplied DataReader
+ </summary>
+	<param name="dr">The IDataReader to use to fill the object</param>
+	<param name="objType">The type of the Object</param>
+	<param name="totalRecords">The total No of records</param>
+	<returns>A List of custom business objects</returns>
+	<remarks></remarks>
+	<history>
+ 	[cnurse]	01/28/2008	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:QSLib.Common.Utilities.CBO.FillCollection``1(System.Data.IDataReader,System.Int32@)">
+ -----------------------------------------------------------------------------
+ <summary>
+ Generic version of FillCollection fills a List custom business object of a specified type 
+ from the supplied DataReader
+ </summary>
+	<typeparam name="T">The type of the business object</typeparam>
+	<param name="dr">The IDataReader to use to fill the object</param>
+	<returns>A List of custom business objects</returns>
+	<remarks></remarks>
+	<history>
+ 	[cnurse]	10/10/2005	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:QSLib.Common.Utilities.CBO.FillDictionary``1(System.Data.IDataReader)">
+ -----------------------------------------------------------------------------
+ <summary>
+ FillDictionary fills a Dictionary of objects from a DataReader
+ </summary>
+	<typeparam name="TItem">The value for the Dictionary Item</typeparam>
+	<param name="dr">The Data Reader</param>
+	<history>
+ 	[cnurse]	11/29/2007	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:QSLib.Common.Utilities.CBO.FillDictionary``1(System.Data.IDataReader,System.Collections.Generic.IDictionary{System.Int32,``0}@)">
+ -----------------------------------------------------------------------------
+ <summary>
+ FillDictionary fills a Dictionary of objects from a DataReader
+ </summary>
+	<typeparam name="TItem">The value for the Dictionary Item</typeparam>
+	<param name="objToFill">The Dictionary to fill</param>
+	<param name="dr">The Data Reader</param>
+	<history>
+ 	[cnurse]	11/29/2007	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:QSLib.Common.Utilities.CBO.FillDictionary``2(System.String,System.Data.IDataReader)">
+ -----------------------------------------------------------------------------
+ <summary>
+ FillDictionary fills a Dictionary of objects from a DataReader
+ </summary>
+	<typeparam name="TKey">The key for the Dictionary</typeparam>
+	<typeparam name="TValue">The value for the Dictionary Item</typeparam>
+	<param name="keyField">The key field used for the Key</param>
+	<param name="dr">The Data Reader</param>
+	<history>
+ 	[cnurse]	11/29/2007	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:QSLib.Common.Utilities.CBO.FillDictionary``2(System.String,System.Data.IDataReader,System.Collections.Generic.IDictionary{``0,``1})">
+ -----------------------------------------------------------------------------
+ <summary>
+ FillDictionary fills a Dictionary of objects from a DataReader
+ </summary>
+	<typeparam name="TKey">The key for the Dictionary</typeparam>
+	<typeparam name="TValue">The value for the Dictionary Item</typeparam>
+	<param name="keyField">The key field used for the Key</param>
+	<param name="objDictionary">The Dictionary to fill</param>
+	<param name="dr">The Data Reader</param>
+	<history>
+ 	[cnurse]	11/29/2007	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="T:QSLib.Common.Utilities.CBO">
+ -----------------------------------------------------------------------------
+ Project:    QSLib
+ Namespace:  QSLib.Common.Utilities
+ Class:      CBO
+ -----------------------------------------------------------------------------
+ <summary>
+ The CBO class is a helper class to fill business object with data from database
+ </summary>
+	<history>
+     [cnurse]	8/10/2009	created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="T:QSLib.Common.Utilities.SettingManager">
+ -----------------------------------------------------------------------------
+ Project:    QSLib
+ Namespace:  QSLib.Common.Utilities
+ Class:      SettingManager
+ -----------------------------------------------------------------------------
+ <summary>
+ The SettingManager class is a helper class that manipulate settings in a XML file
+ All Settings will be loaded from local file by XMLNavigator
+ At runtime, an instance of SettingManager is created , which is cached for performance.
+ </summary>
+	<history>
+     [cnurse]	8/10/2009	created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="T:QSLib.Entities.Drugs.DrugInfo">
+ -----------------------------------------------------------------------------
+ Project:    QSLib
+ Namespace:  QSLib.Entities.Drugs
+ Class:      DrugInfo
+ -----------------------------------------------------------------------------
+ <summary>
+ The DrugInfo class is a business object class which represent the drug infomation
+ </summary>
+	<history>
+     [cnurse]	8/10/2009	created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:QSLib.Entities.Patients.PatientController.GetPatientIDFromUsername(System.String)">
+	<summary>
+ Gets PatientID and PatientAccountID
+ </summary>
+	<param name="strUsername">User name</param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:QSLib.Entities.Patients.PatientController">
+ -----------------------------------------------------------------------------
+ Project:    QSLib
+ Namespace:  QSLib.Entities.Patients
+ Class:      PatientController
+ -----------------------------------------------------------------------------
+ <summary>
+ The PatientController class is a helper class which communicate with database provider,
+ munipulate business objects including "Add", "Update" "Delete" and "select"
+ </summary>
+	<history>
+     [cnurse]	8/10/2009	created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:QSLib.Providers.Cryptography.RSAProvider.#ctor">
+	<summary>
+ Private constructor make is as singleton
+ </summary>
+	<remarks></remarks>
+</member><member name="M:QSLib.Providers.Cryptography.RSAProvider.Encrypt(System.String)">
+	<summary>
+ If the input string is not long enough, pad it.
+ </summary>
+	<param name="strInput"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="M:QSLib.Providers.Cryptography.RSAProvider.Decrypt(System.Object)">
+	<summary>
+ Decrypt string based on given key
+ </summary>
+	<param name="strInput"></param>
+	<returns></returns>
+	<remarks></remarks>
+</member><member name="T:QSLib.Entities.Patients.AddressInfo">
+ -----------------------------------------------------------------------------
+ Project:    QSLib
+ Namespace:  QSLib.Entities.Patients
+ Class:      AddressInfo
+ -----------------------------------------------------------------------------
+ <summary>
+ The AddressInfo class is a business object class which represent the patients address infomation
+ </summary>
+	<history>
+     [cnurse]	8/10/2009	created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="P:QSLib.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:QSLib.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="T:QSLib.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="T:QSLib.Entities.Orders.PaymentInfo">
+ -----------------------------------------------------------------------------
+ Project:    QSLib
+ Namespace:  QSLib.Entities.Orders
+ Class:      PaymentInfo
+ -----------------------------------------------------------------------------
+ <summary>
+ The PaymentInfo class is a business object class which represent the payment detail
+ </summary>
+	<history>
+     [cnurse]	8/10/2009	created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:QSLib.Common.Utilities.ObjectMappingInfo.#ctor">
+-----------------------------------------------------------------------------
+ <summary>
+ Constructs a new ObjectMappingInfo Object
+ </summary>
+	<history>
+     [cnurse]	01/12/2008	created
+ </history>
+-----------------------------------------------------------------------------
+
+</member><member name="P:QSLib.Common.Utilities.ObjectMappingInfo.CacheKey">
+ -----------------------------------------------------------------------------
+ <summary>
+ CacheKey gets the root value of the key used to identify the cached collection 
+ in the ASP.NET Cache.
+ </summary>
+	<history>
+ 	[cnurse]	12/01/2007	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="P:QSLib.Common.Utilities.ObjectMappingInfo.CacheByProperty">
+ -----------------------------------------------------------------------------
+ <summary>
+ CacheByProperty gets and sets the property that is used to cache collections
+ of the object.  For example: Modules are cached by the "TabId" proeprty.  Tabs 
+ are cached by the PortalId property.
+ </summary>
+	<remarks>If empty, a collection of all the instances of the object is cached.</remarks>
+	<history>
+ 	[cnurse]	12/01/2007	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="P:QSLib.Common.Utilities.ObjectMappingInfo.CacheTimeOutMultiplier">
+ -----------------------------------------------------------------------------
+ <summary>
+ CacheTimeOutMultiplier gets and sets the multiplier used to determine how long
+ the cached collection should be cached.  It is multiplied by the Performance
+ Setting - which in turn can be modified by the Host Account.
+ </summary>
+	<remarks>Defaults to 20.</remarks>
+	<history>
+ 	[cnurse]	12/01/2007	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="P:QSLib.Common.Utilities.ObjectMappingInfo.ColumnNames">
+ -----------------------------------------------------------------------------
+ <summary>
+ ColumnNames gets a dictionary of Database Column Names for the Object
+ </summary>
+	<history>
+ 	[cnurse]	12/02/2007	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="P:QSLib.Common.Utilities.ObjectMappingInfo.ObjectType">
+ -----------------------------------------------------------------------------
+ <summary>
+ ObjectType gets and sets the type of the object
+ </summary>
+	<history>
+ 	[cnurse]	12/01/2007	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="P:QSLib.Common.Utilities.ObjectMappingInfo.PrimaryKey">
+ -----------------------------------------------------------------------------
+ <summary>
+ PrimaryKey gets and sets the property of the object that corresponds to the
+ primary key in the database
+ </summary>
+	<history>
+ 	[cnurse]	12/01/2007	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="P:QSLib.Common.Utilities.ObjectMappingInfo.Properties">
+ -----------------------------------------------------------------------------
+ <summary>
+ Properties gets a dictionary of Properties for the Object
+ </summary>
+	<history>
+ 	[cnurse]	12/01/2007	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="P:QSLib.Common.Utilities.ObjectMappingInfo.TableName">
+ -----------------------------------------------------------------------------
+ <summary>
+ TableName gets and sets the name of the database table that is used to
+ persist the object.
+ </summary>
+	<history>
+ 	[cnurse]	12/01/2007	Created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="T:QSLib.Common.Utilities.ObjectMappingInfo">
+ -----------------------------------------------------------------------------
+ Project:    QSLib
+ Namespace:  QSLib.Common.Utilities
+ Class:      ObjectMappingInfo
+ -----------------------------------------------------------------------------
+ <summary>
+ The ObjectMappingInfo class is a helper class that holds the mapping information
+ for a particular type.  This information is in two parts:
+     - Information about the Database Table that the object is mapped to
+     - Information about how the object is cached.
+ For each object, when it is first accessed, reflection is used on the class and
+ an instance of ObjectMappingInfo is created, which is cached for performance.
+ </summary>
+	<history>
+     [cnurse]	8/10/2009	created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="T:QSLib.Entities.Drugs.DrugDescriptionController">
+ -----------------------------------------------------------------------------
+ Project:    QSLib
+ Namespace:  QSLib.Entities.Drugs
+ Class:      DrugDescriptionController
+ -----------------------------------------------------------------------------
+ <summary>
+ The DrugDescriptionController class is a helper class which communicate with database provider,
+ munipulate business objects including "Add", "Update" "Delete" and "select"
+ </summary>
+	<history>
+     [cnurse]	8/10/2009	created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="T:QSLib.Entities.Patients.PatientAccountInfo">
+ -----------------------------------------------------------------------------
+ Project:    QSLib
+ Namespace:  QSLib.Entities.Patients
+ Class:      PatientAccountInfo
+ -----------------------------------------------------------------------------
+ <summary>
+ The PatientAccountInfo class is a business object class which represent the patients account infomation
+ </summary>
+	<history>
+     [cnurse]	8/10/2009	created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="T:QSLib.Entities.Patients.AddressCollection">
+ -----------------------------------------------------------------------------
+ Project:    QSLib
+ Namespace:  QSLib.Entities.Patients
+ Class:      AddressInfo
+ -----------------------------------------------------------------------------
+ <summary>
+ The AddressCollection class is a business object class which represent a set of the patients addresses infomation
+ </summary>
+	<history>
+     [cnurse]	8/10/2009	created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member><member name="M:QSLib.Entities.Users.UserController.AuthenticateUser(System.String,System.String)">
+	<summary>
+ Try to authenticate the user.
+ </summary>
+	<param name="strUsername">User name</param>
+	<param name="strPassword">Password</param>
+	<returns>The user ID if successful, otherwise, -1</returns>
+	<remarks></remarks>
+</member><member name="M:QSLib.Entities.Users.UserController.AuthenticateSecureUser(System.String,System.String)">
+	<summary>
+ Try to authenticate the user.
+ </summary>
+	<param name="strUsername">User name</param>
+	<param name="strPassword">Password</param>
+	<returns>The user ID if successful, otherwise, -1</returns>
+	<remarks></remarks>
+</member><member name="T:QSLib.Entities.Patients.PatientInfo">
+ -----------------------------------------------------------------------------
+ Project:    QSLib
+ Namespace:  QSLib.Entities.Patients
+ Class:      PatientInfo
+ -----------------------------------------------------------------------------
+ <summary>
+ The PatientInfo class is a business object class which represent the patients infomation
+ </summary>
+	<history>
+     [cnurse]	8/10/2009	created
+ </history>
+ -----------------------------------------------------------------------------
+
+</member>
+</members>
+</doc>
